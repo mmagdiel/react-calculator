@@ -1,25 +1,21 @@
-import React from "react";
+import React, { useReducer } from "react";
 import "./calculator.css";
+import { Btn } from "../btn/Btn";
+import { initialState, reducer, btns, getDisplay } from "../../services";
 
 function Calculator() {
+  const [state, dispatch] = useReducer(reducer, initialState);
   return (
     <div className="contaniner">
       <header className="display">
-        <h2 className="screen">
-          3234555555555555555555555555555555555555555555
-        </h2>
+        <h2 className="screen">{getDisplay(state.display)}</h2>
       </header>
       <main className="buttons">
-        <button className="btn">1</button>
-        <button className="btn">2</button>
-        <button className="btn">3</button>
-        <button className="btn">4</button>
-        <button className="btn">5</button>
-        <button className="btn">6</button>
-        <button className="btn">7</button>
-        <button className="btn">8</button>
-        <button className="btn">9</button>
-        <button className="btn">0</button>
+        {btns.map((item) => {
+          const { id, label, action, type } = item;
+          const handle = () => dispatch(action);
+          return <Btn key={id} handle={handle} type={type} label={label} />;
+        })}
       </main>
     </div>
   );

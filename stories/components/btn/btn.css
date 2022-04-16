@@ -1,0 +1,42 @@
+.btn {
+  animation-name: click;
+  font: var(--cal-btn-font);
+  height: var(--cal-btn-width);
+  width: var(--cal-btn-height);
+  border: var(--cal-btn-border);
+  transform: var(--cal-btn-transform);
+  box-shadow: var(--cal-btn-box-shadow);
+  text-align: var(--cal-btn-text-align);
+  border-radius: var(--cal-btn-border-radius);
+  animation-duration: var(--cal-btn-animation-duration);
+}
+
+.btn-st {
+  color: var(--cal-btn-txt-color);
+  background-color: var(--cal-btn-bg-color);
+}
+
+.btn-em {
+  color: var(--cal-btn-em-txt-color);
+  background-color: var(--cal-btn-em-bg-color);
+}
+
+.btn-primary {
+  color: var(--cal-btn-primary-txt-color);
+  background-color: var(--cal-btn-primary-bg-color);
+}
+
+.btn-primary-em {
+  color: var(--cal-btn-primary-em-txt-color);
+  background-color: var(--cal-btn-primary-em-bg-color);
+}
+
+.btn-secondary {
+  color: var(--cal-btn-secondary-txt-color);
+  background-color: var(--cal-btn-secondary-bg-color);
+}
+
+.btn-secondary-em {
+  color: var(--cal-btn-secondary-em-txt-color);
+  background-color: var(--cal-btn-secondary-em-bg-color);
+}

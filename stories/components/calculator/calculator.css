@@ -1,71 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
-:root {
-  /* container */
-  --cal-container-width: 360px;
-  --cal-container-height: 640px;
-  --cal-container-border-radius: 20px;
-  --cal-container-box-sizing: border-box;
-  --cal-container-padding: 65px 20px 18px 20px;
-  --cal-container-shadow: 13px 13px 10px #e5e5e5;
-  --cal-container-border: 1px solid rgba(0, 0, 0, 0.2);
-  --cal-container-linear-gradiente: 180deg, #fefefe 0%, #e9ecee 37.34%;
-
-  /* diplay */
-  --cal-diplay-padding: 12px;
-  --cal-display-bg-color: #000;
-  --cal-display-border-radius: 10px;
-  --cal-display-shadow: 4px 4px 4px #d5d8dc;
-
-  /* diplay screen */
-  --cal-display-screen-bg-color: #a5a5a5;
-  --cal-display-screen-txt-color: #3f474e;
-  --cal-display-screen-padding: 24px 16px 24px 16px;
-  --cal-display-screen-font: 28px Roboto;
-  --cal-display-screen-margin: 0;
-  --cal-display-screen-letter-spacing: 15%;
-  --cal-display-screen-text-align: end;
-
-  --cal-primary-color: #0f56b3;
-  --cal-bg-color: #fbfbfb;
-  --cal-grey-color: #787878;
-
-  /* buttons */
-  --cal-btns-gap: 1rem;
-  --cal-btns-padding: 0;
-  --cal-btns-display: grid;
-  --cal-btns-margin: 48px 0 0 0;
-  --cal-btns-grid: repeat(5, 1fr) / repeat(4, 1fr);
-
-  /* button */
-  --cal-btn-width: 67px;
-  --cal-btn-height: 67px;
-  --cal-btn-border-radius: 50%;
-  --cal-btn-text-align: center;
-  --cal-btn-box-shadow: 0px 0px 10px 0px #d4d5d7;
-  --cal-btn-font: 500 24px Roboto;
-  --cal-btn-animation-duration: 300ms;
-  --cal-btn-transform: scale(0.95);
-
-  --cal-btn-fun-bg-color: #d5d6e9;
-  --cal-btn-fun-txt-color: #111c81;
-
-  --cal-btn-bg-color: #f4f5f7;
-  --cal-btn-txt-color: #627785;
-
-  --cal-btn-em-bg-color: #f6f0e4;
-  --cal-btn-em-txt-color: #627785;
-
-  --cal-btn-del-bg-color: #e7e9ec;
-  --cal-btn-del-txt-color: #7c7d85;
-
-  --cal-btn-clean-bg-color: #fe9505;
-  --cal-btn-clean-txt-color: #ffffff;
-
-  --cal-btn-equal-bg-color: #2d41f5;
-  --cal-btn-equal-txt-color: #ffffff;
-}
-
 .contaniner {
   width: var(--cal-container-width);
   height: var(--cal-container-height);
@@ -94,26 +28,14 @@
   letter-spacing: var(--cal-display-screen-letter-spacing);
 }
 
+button + button {
+  margin: 0;
+}
+
 .buttons {
   gap: var(--cal-btns-gap);
   display: var(--cal-btns-display);
   margin: var(--cal-btns-margin);
   padding: var(--cal-btns-padding);
   grid: var(--cal-btns-grid);
-}
-
-.btn {
-  animation-name: click;
-  font: var(--cal-btn-font);
-  height: var(--cal-btn-width);
-  width: var(--cal-btn-height);
-  transform: var(--cal-btn-transform);
-  box-shadow: var(--cal-btn-box-shadow);
-  text-align: var(--cal-btn-text-align);
-  border-radius: var(--cal-btn-border-radius);
-  animation-duration: var(--cal-btn-animation-duration);
-}
-
-button + button {
-  margin: 0;
 }
